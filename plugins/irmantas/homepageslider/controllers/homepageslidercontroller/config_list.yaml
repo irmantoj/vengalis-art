@@ -1,0 +1,12 @@
+list: $/irmantas/homepageslider/models/sliderimage/columns.yaml
+modelClass: Irmantas\Homepageslider\Models\SliderImage
+title: HomePageSliderController
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'irmantas/homepageslider/homepageslidercontroller/update/:id'

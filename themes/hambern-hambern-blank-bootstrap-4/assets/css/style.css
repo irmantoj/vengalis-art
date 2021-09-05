@@ -1,0 +1,291 @@
+@font-face {
+  font-family: "Unica One";
+  src: url("UnicaOne-Regular.ttf");
+}
+
+body {
+  background-color: #000000;
+}
+
+.page {
+  background-color: white;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover 
+{
+   color:black; 
+   text-decoration: none; 
+   cursor: pointer;  
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.6);
+} 
+
+.social-icon {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 30px;
+}
+
+.social-icon-dark {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 30px;
+}
+
+.social-icon-dark:hover {
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 30px;
+}
+
+.social-icon:hover,
+.footer-link:hover {
+  color: white;
+} 
+
+
+#carousel-inner {
+  width:100%; 
+  max-height: 600px !important;
+}
+
+.carousel-img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+
+#logo {
+  height: 46px;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+.bg-grey {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.section-borders {
+  border-top: black solid 1px;
+  border-bottom: black solid 1px;
+}
+
+.nav-item-container,
+.gallery-img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-card {
+  padding: 20px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.gallery-card:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.gallery-img {
+  /* width: 300px; */
+  height: 300px;
+  border-radius:5px;
+  object-fit:cover;
+}
+
+.gallery-info-container {
+  text-align: center;
+}
+
+.gallery-link:hover {
+  background-color:rgba(0, 0, 0, 0.15);
+}
+
+.gallery-link-img {
+  width: 100%;
+  height: 400px;
+  object-fit:cover;
+}
+
+.contacts-container {
+  width: 100%;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.img-details {
+  height: 500px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.additional-img-details {
+  height: 120px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.main-image {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+}
+
+.additional-image-container:hover {
+  border: solid 5px rgba(0, 0, 0, 0.1);
+}
+
+.selected-img {
+  border: solid 5px rgba(0, 0, 0, 0.15);
+}
+
+.similar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.similar-img {
+  height: 150px;
+  object-fit: contain;
+}
+
+.main-title {
+  font-family: "Unica One", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #494949;
+}
+
+.sub-title {
+  font-family: "Unica One", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: #494949;
+  margin: 0;
+}
+
+.sub-text {
+  font-family: Roboto;
+  color: #494949;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+}
+
+p {
+  font-family: Roboto;
+}
+
+.main-text {
+  font-family: Roboto;
+  color: #494949;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  font-size: 14px;
+}
+
+.contact-text {
+  font-family: Roboto;
+  color: #494949;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  font-size: 16px;
+}
+
+.contacts-icon {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 30px;
+}
+
+.contacts-item {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-icon-container {
+  display: flex;
+  justify-content: center;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#map {
+  -webkit-filter: grayscale(70%);
+  -moz-filter: grayscale(70%);
+   -ms-filter: grayscale(70%);
+    -o-filter: grayscale(70%);
+       filter: grayscale(70%);
+}
+
+/* .painting-details {
+  max-height: 500px;
+  display: flex;
+  align-items: center;
+} */
+
+/* .silimar-container .slick-prev:before,
+.silimar-container .slick-next:before {
+  color: rgba(0, 0, 0, 0.4);
+} */
+
+@media only screen and (max-width: 770px) {
+  .similar-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .similar-container > div {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .similar-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+  }
+  .similar-img {
+    max-width:100%;
+    max-height:100%;
+  }
+  .main-image {
+    height: auto;
+  }
+
+  #carousel-inner {
+    width:100%; 
+    max-height: 400px !important;
+  }
+}

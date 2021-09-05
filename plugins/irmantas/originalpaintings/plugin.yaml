@@ -1,0 +1,11 @@
+plugin:
+    name: 'irmantas.originalpaintings::lang.plugin.name'
+    description: 'irmantas.originalpaintings::lang.plugin.description'
+    author: Irmantas
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    original-paintings:
+        label: 'Orginalus darbai'
+        url: irmantas/originalpaintings/originalpaintingscontroller
+        icon: icon-image

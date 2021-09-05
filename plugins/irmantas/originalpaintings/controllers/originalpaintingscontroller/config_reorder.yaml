@@ -1,0 +1,4 @@
+title: OriginalPaintingsController
+modelClass: Irmantas\Originalpaintings\Models\OriginalPainting
+toolbar:
+    buttons: reorder_toolbar

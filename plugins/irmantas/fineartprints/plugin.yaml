@@ -1,0 +1,11 @@
+plugin:
+    name: 'irmantas.fineartprints::lang.plugin.name'
+    description: 'irmantas.fineartprints::lang.plugin.description'
+    author: Irmantas
+    icon: oc-icon-picture-o
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Reprodukcija
+        url: irmantas/fineartprints/fineartprints
+        icon: icon-image

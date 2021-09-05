@@ -1,0 +1,11 @@
+plugin:
+    name: 'irmantas.homepageslider::lang.plugin.name'
+    description: 'irmantas.homepageslider::lang.plugin.description'
+    author: Irmantas
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    home-page-slider:
+        label: Pradinis
+        url: irmantas/homepageslider/homepageslidercontroller
+        icon: icon-slideshare

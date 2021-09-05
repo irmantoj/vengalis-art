@@ -1,0 +1,97 @@
+title = "fineArtPrintsDetails"
+url = "/reprodukcija/:id"
+layout = "default"
+is_hidden = 0
+
+[builderDetails]
+modelClass = "Irmantas\FineArtPrints\Models\FineArtPrint"
+identifierValue = "{{ :id }}"
+modelKeyColumn = "id"
+displayColumn = "name"
+notFoundMessage = "Record not found"
+==
+<?php
+use Irmantas\FineArtPrints\Models\FineArtPrint;
+function onStart()
+{   
+    $maxEntries = 5;
+    $similarEntries = FineArtPrint::limit($maxEntries + 1)->get();
+    
+    $filtered = $similarEntries->where('id','!=', $this->param('id'));
+    //dd($filtered->first()->image);
+    $this['similar'] = $filtered;
+}
+?>
+==
+{% set record = builderDetails.record %}
+{% set displayColumn = builderDetails.displayColumn %}
+{% set notFoundMessage = builderDetails.notFoundMessage %}
+
+
+{% if record %}
+<section class="">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 my-4">
+                <div class="slider slider-for mb-2">
+                    <a href="{{ record.image.path }}" data-title="{{ record.name }}" data-lightbox="roadtrip">
+                        <img class="main-image" src="{{ record.image.path }}">
+                    </a>
+
+                    {% if record.images %}
+                    {% for image in record.images %}
+                    <a href="{{ image.path }}" data-title="{{ record.name }}" data-lightbox="roadtrip">
+                        <img src="{{ image.path }}" class="main-image">
+                    </a>
+                    {% endfor %}
+                    {% endif %}
+                </div>
+                {% if record.images[0] %}
+                <div class="slider slider-nav">
+                    
+                    <div class="mx-2">
+                        <img src="{{ record.image.path }}" class="additional-img-details">
+                    </div>
+                    {% for image in record.images %}
+                    <div class="mx-2">
+                        <img src="{{ image.path }}" class="additional-img-details">
+                    </div>
+                    {% endfor %}
+                    
+                </div>
+                {% endif %}
+            </div>
+
+            <div class="col-lg-6 mt-4">
+                <div>
+                    <h1 class="main-title">{{ record.name }}</h1>
+                    <p class="main-text">&euro;{{ record.price }}</p>
+                    <p>{{ record.description }}</p> 
+                    <p>{{ record.size }}</p>
+                </div>
+            </div>
+        </div>
+
+        {% if similar is not empty %}
+            <h2 class="text-center mt-4 main-title">Jums gali taip pat patikti</h2>
+        {% endif %}
+
+        <div class="row my-4">
+            <div class="col">
+                    <div class="similar-container mb-4">
+                        {% for entry in similar %}
+                        <div class="similar-img-container mx-2">
+                            <a href="{{ 'fineArtPrintsDetails'|page({ id: entry.id }) }}">
+                                <img src="{{ entry.image.path }}" class="similar-img">
+                            </a>
+                        </div>
+                        {% endfor %}
+                    </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+{% else %}
+{{ notFoundMessage }}
+{% endif %}

@@ -1,0 +1,44 @@
+description = "Navigation bar"
+==
+<div class="container-fluid bg-black">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<nav class="navbar navbar-expand-md navbar-dark bg-black">
+					<a class="navbar-brand" href="{{ 'home'|page }}">
+						<img id="logo" src="{{ 'assets/images/logo.jpg'|theme }}" />
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+						aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarText">
+
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item-container nav-item{{ this.page.baseFileName == 'home' ? ' active' }}">
+								<a class="nav-link" href="{{ 'home'|page }}">Pagrindinis</a>
+							</li>
+
+							<li class="nav-item-container nav-item{{ this.page.baseFileName == 'originalArtWorks' ? ' active' }}">
+								<a class="nav-link" href="{{ 'originalArtWorks'|page }}">Originalūs darbai</a>
+							</li>
+
+							<li class="nav-item-container nav-item{{ this.page.baseFileName == 'fineArtPrints' ? ' active' }}">
+								<a class="nav-link" href="{{ 'fineArtPrints'|page }}">Reprodukcija</a>
+							</li>
+
+<!--                             <li class="nav-item-container nav-item{{ this.page.baseFileName == 'about' ? ' active' }}">
+    <a class="nav-link" href="{{ 'about'|page }}">Apie</a>
+</li> -->
+
+							<li class="nav-item-container nav-item{{ this.page.baseFileName == 'contacts' ? ' active' }}">
+								<a class="nav-link" href="{{ 'contacts'|page }}">Kontaktai</a>
+							</li>
+						</ul>
+
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>

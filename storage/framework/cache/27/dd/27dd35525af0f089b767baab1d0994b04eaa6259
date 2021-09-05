@@ -1,0 +1,172 @@
+1629370712a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:3195:"title = "home"
+url = "/"
+layout = "default"
+is_hidden = 0
+
+[builderList]
+modelClass = "Irmantas\Homepageslider\Models\SliderImage"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "name"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+sortColumn = "position"
+sortDirection = "asc"
+==
+<section>
+  <div id="carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      {% for record in records %}
+        <li data-target="#carousel" data-slide-to="{{ loop.index }}" class="{{ loop.index == 1 ? 'active' : null }}"></li>
+      {% endfor %}
+    </ol>
+    <div id="carousel-inner" class="carousel-inner" role="listbox">
+      {% for record in records %}
+      <div class="carousel-item {{ loop.index == 1 ? 'active' : null }}">
+        <img class="carousel-img" src="{{ record.image.path }}" alt="Slide">
+      </div>
+      {% endfor %}
+    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</section>
+
+<section class="bg-grey section-borders">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="gallery-link p-4">
+          <a href="{{ 'originalArtWorks'|page }}">
+            <div class="text-center">
+              <h3 class="main-title mb-3">Orginalūs darbai</h3>
+            </div>
+            <div>
+              <img class="gallery-link-img" src="{{ 'assets/images/pic1.jpg'|theme }}" />
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="gallery-link p-4">
+          <a href="{{ 'fineArtPrints'|page }}">
+            <div class="text-center">
+              <h3 class="main-title mb-3">Fine art prints</h3>
+            </div>
+            <div>
+              <img class="gallery-link-img" src="{{ 'assets/images/pic2.jpg'|theme }}" />
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="p-4">
+          <img class="gallery-link-img" src="{{ 'assets/images/vengalis.jpg'|theme }}" />
+        </div>
+        
+      </div>
+      <div class="d-flex justify-content align-items-center p-4 col-md-6">
+        <div>
+          <h3 class="w-100 main-title">Apie Mane</h3>
+          <p class="w-100">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Ipsam, nisi reiciendis distinctio earum quis suscipit, quisquam 
+            alias ea temporibus fugiat veritatis consectetur ullam maxime tenetur 
+            dolorum fuga totam excepturi! Voluptas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>";s:5:"mtime";i:1619981203;s:6:"markup";s:2825:"<section>
+  <div id="carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      {% for record in records %}
+        <li data-target="#carousel" data-slide-to="{{ loop.index }}" class="{{ loop.index == 1 ? 'active' : null }}"></li>
+      {% endfor %}
+    </ol>
+    <div id="carousel-inner" class="carousel-inner" role="listbox">
+      {% for record in records %}
+      <div class="carousel-item {{ loop.index == 1 ? 'active' : null }}">
+        <img class="carousel-img" src="{{ record.image.path }}" alt="Slide">
+      </div>
+      {% endfor %}
+    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</section>
+
+<section class="bg-grey section-borders">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="gallery-link p-4">
+          <a href="{{ 'originalArtWorks'|page }}">
+            <div class="text-center">
+              <h3 class="main-title mb-3">Orginalūs darbai</h3>
+            </div>
+            <div>
+              <img class="gallery-link-img" src="{{ 'assets/images/pic1.jpg'|theme }}" />
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="gallery-link p-4">
+          <a href="{{ 'fineArtPrints'|page }}">
+            <div class="text-center">
+              <h3 class="main-title mb-3">Fine art prints</h3>
+            </div>
+            <div>
+              <img class="gallery-link-img" src="{{ 'assets/images/pic2.jpg'|theme }}" />
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="p-4">
+          <img class="gallery-link-img" src="{{ 'assets/images/vengalis.jpg'|theme }}" />
+        </div>
+        
+      </div>
+      <div class="d-flex justify-content align-items-center p-4 col-md-6">
+        <div>
+          <h3 class="w-100 main-title">Apie Mane</h3>
+          <p class="w-100">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Ipsam, nisi reiciendis distinctio earum quis suscipit, quisquam 
+            alias ea temporibus fugiat veritatis consectetur ullam maxime tenetur 
+            dolorum fuga totam excepturi! Voluptas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>";s:4:"code";N;s:5:"title";s:4:"home";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:11:"builderList";a:10:{s:10:"modelClass";s:42:"Irmantas\Homepageslider\Models\SliderImage";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:4:"name";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";s:10:"sortColumn";s:8:"position";s:13:"sortDirection";s:3:"asc";}}}

@@ -1,0 +1,10 @@
+name: HomePageSliderController
+form: $/irmantas/homepageslider/models/sliderimage/fields.yaml
+modelClass: Irmantas\Homepageslider\Models\SliderImage
+defaultRedirect: irmantas/homepageslider/homepageslidercontroller
+create:
+    redirect: 'irmantas/homepageslider/homepageslidercontroller/update/:id'
+    redirectClose: irmantas/homepageslider/homepageslidercontroller
+update:
+    redirect: irmantas/homepageslider/homepageslidercontroller
+    redirectClose: irmantas/homepageslider/homepageslidercontroller

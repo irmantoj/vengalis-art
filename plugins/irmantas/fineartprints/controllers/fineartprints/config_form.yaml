@@ -1,0 +1,10 @@
+name: FineArtPrints
+form: $/irmantas/fineartprints/models/fineartprint/fields.yaml
+modelClass: Irmantas\FineArtPrints\Models\FineArtPrint
+defaultRedirect: irmantas/fineartprints/fineartprints
+create:
+    redirect: 'irmantas/fineartprints/fineartprints/update/:id'
+    redirectClose: irmantas/fineartprints/fineartprints
+update:
+    redirect: irmantas/fineartprints/fineartprints
+    redirectClose: irmantas/fineartprints/fineartprints

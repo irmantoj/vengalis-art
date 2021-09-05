@@ -1,0 +1,36 @@
+fields:
+    name:
+        label: Name
+        span: full
+        required: 1
+        type: text
+    description:
+        label: Description
+        span: full
+        type: text
+    size:
+        label: Size
+        span: auto
+        type: text
+    price:
+        label: Price
+        span: auto
+        type: number
+    image:
+        label: Image
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    images:
+        label: 'Additional Images'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload

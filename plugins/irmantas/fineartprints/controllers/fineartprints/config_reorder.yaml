@@ -1,0 +1,4 @@
+title: FineArtPrints
+modelClass: Irmantas\FineArtPrints\Models\FineArtPrint
+toolbar:
+    buttons: reorder_toolbar

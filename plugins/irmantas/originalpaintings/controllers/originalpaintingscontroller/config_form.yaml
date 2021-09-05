@@ -1,0 +1,10 @@
+name: OriginalPaintingsController
+form: $/irmantas/originalpaintings/models/originalpainting/fields.yaml
+modelClass: Irmantas\Originalpaintings\Models\OriginalPainting
+defaultRedirect: irmantas/originalpaintings/originalpaintingscontroller
+create:
+    redirect: 'irmantas/originalpaintings/originalpaintingscontroller/update/:id'
+    redirectClose: irmantas/originalpaintings/originalpaintingscontroller
+update:
+    redirect: irmantas/originalpaintings/originalpaintingscontroller
+    redirectClose: irmantas/originalpaintings/originalpaintingscontroller

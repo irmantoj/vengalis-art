@@ -1,0 +1,14 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table irmantas_fineartprints_'
+    - builder_table_create_irmantas_fineartprints_.php
+1.0.3:
+    - 'Updated table irmantas_fineartprints_'
+    - builder_table_update_irmantas_fineartprints_.php
+1.0.4:
+    - 'Updated table irmantas_fineartprints_'
+    - builder_table_update_irmantas_fineartprints__2.php
+1.0.5:
+    - 'Updated table irmantas_fineartprints_'
+    - builder_table_update_irmantas_fineartprints__3.php

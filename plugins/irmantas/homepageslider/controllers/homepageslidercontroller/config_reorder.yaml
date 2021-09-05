@@ -1,0 +1,4 @@
+title: HomePageSliderController
+modelClass: Irmantas\Homepageslider\Models\SliderImage
+toolbar:
+    buttons: reorder_toolbar

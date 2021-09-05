@@ -1,0 +1,11 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table irmantas_homepageslider_'
+    - builder_table_create_irmantas_homepageslider_.php
+1.0.3:
+    - 'Updated table irmantas_homepageslider_'
+    - builder_table_update_irmantas_homepageslider_.php
+1.0.4:
+    - 'Updated table irmantas_homepageslider_'
+    - builder_table_update_irmantas_homepageslider__2.php
