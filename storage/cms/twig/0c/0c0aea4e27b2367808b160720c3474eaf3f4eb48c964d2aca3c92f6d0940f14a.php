@@ -166,12 +166,12 @@ class __TwigTemplate_30e5eedf1022a1bed5237c2441b764e667a55877ac349b6c6b9f70cdb88
             <div class=\"text-center\">
               <h3 class=\"main-title mb-3\">Orginalūs darbai</h3>
             </div>
-            <div>
+            <!-- <div>
               <img class=\"gallery-link-img\" src=\"";
         // line 35
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/pic1.jpg");
         echo "\" />
-            </div>
+            </div> -->
           </a>
         </div>
       </div>
@@ -184,12 +184,12 @@ class __TwigTemplate_30e5eedf1022a1bed5237c2441b764e667a55877ac349b6c6b9f70cdb88
             <div class=\"text-center\">
               <h3 class=\"main-title mb-3\">Fine art prints</h3>
             </div>
-            <div>
+            <!-- <div>
               <img class=\"gallery-link-img\" src=\"";
         // line 47
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/pic2.jpg");
         echo "\" />
-            </div>
+            </div> -->
           </a>
         </div>
       </div>
@@ -275,9 +275,9 @@ class __TwigTemplate_30e5eedf1022a1bed5237c2441b764e667a55877ac349b6c6b9f70cdb88
             <div class=\"text-center\">
               <h3 class=\"main-title mb-3\">Orginalūs darbai</h3>
             </div>
-            <div>
+            <!-- <div>
               <img class=\"gallery-link-img\" src=\"{{ 'assets/images/pic1.jpg'|theme }}\" />
-            </div>
+            </div> -->
           </a>
         </div>
       </div>
@@ -287,9 +287,9 @@ class __TwigTemplate_30e5eedf1022a1bed5237c2441b764e667a55877ac349b6c6b9f70cdb88
             <div class=\"text-center\">
               <h3 class=\"main-title mb-3\">Fine art prints</h3>
             </div>
-            <div>
+            <!-- <div>
               <img class=\"gallery-link-img\" src=\"{{ 'assets/images/pic2.jpg'|theme }}\" />
-            </div>
+            </div> -->
           </a>
         </div>
       </div>
